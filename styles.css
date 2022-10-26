@@ -1,0 +1,274 @@
+html{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+body{
+    padding: 0;
+    margin: 0 auto;
+    width: 1440px;
+}
+
+#wrapper{
+    width: 375px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-image: url("./images/bg-hero-mobile.svg");
+}
+
+.icon-holder{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    height: 70px;
+    padding: 30px 20px;
+}
+
+.icon-holder img{
+    width: 120px;
+}
+
+.btn button{
+    border: none;
+    background-color: #fff;
+    height: 25px;
+    border-radius: 20px;
+    box-shadow:6px -1px 10px -2px rgba(0,0,0,0.53);
+    padding: 0px 25px;
+    font-weight: 600;
+
+}
+
+.get-started{
+    text-align: center;
+    padding: 30px;
+}
+
+
+.get-started img{
+    width: 320px;
+    padding-top: 50px;
+}
+
+
+
+.get-started button, .community button{
+    border: none;
+    background-color: hsl(322, 100%, 66%);
+    color: #fff;
+    padding: 15px 70px;
+    border-radius: 40px;
+}
+
+.we-grow-together img, .conversation img, .users img{
+    width: 280px;
+    height: 300px;
+}
+
+.we-grow-together, .conversation, .users{
+    background-color:#fff;
+    width: 300px;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow:6px -1px 10px -2px rgba(0,0,0,0.53);
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.community{
+    width:300px;
+    height: 150px;
+    box-shadow:6px -1px 10px -2px rgba(0,0,0,0.53);
+    border-radius: 20px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    position: relative;
+    bottom: -115px;
+    z-index: 3;
+    background-color: #fff;
+}
+
+.footer{
+    width: 350px;
+    padding: 30px 20px;
+    background-color: hsl(192, 100%, 9%);
+    color: #fff;
+}
+
+.logo img{
+    padding-top: 130px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.location, .contact, .email{
+    display: flex;
+    gap: 20px;
+    align-content: center;
+    padding-top: 20px;
+}
+
+.location img, .contact img, .email img{
+    width: 24px;
+    height: 24px;
+    margin-top: 5px;
+}
+
+.footer-link ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+
+.footer-link li a{
+    text-decoration:none ;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 1.8;
+}
+
+.fa .fa-facebook{
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brigh
+}
+
+
+@media (min-width:500px){
+    #wrapper{
+        width: 900px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 0;
+        background-image: url("./images/bg-hero-desktop.svg");
+    }
+
+    .icon-holder{
+        display: flex;
+        justify-content: space-between;
+        width: 900px;
+        height: 70px;
+        padding-right: 40px;
+
+    }
+
+    .get-started{
+        text-align: center;
+        padding: 30px;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        align-items: center;
+        width: 900px;
+    }
+
+    .get-started img{
+        width: 450px;
+        padding-top: 50px;
+    }
+    
+
+    .btn button{
+        border: none;
+        background-color: #fff;
+        height: 30px;
+        border-radius: 20px;
+        box-shadow:6px -1px 10px -2px rgba(0,0,0,0.53);
+        padding-right: 25px;
+        font-weight: 600;
+        margin-right: 50px;
+    }
+    
+
+    .we-grow-together, .conversation, .users{
+        background-color:#fff;
+        width: 850px;
+        padding: 30px 20px;
+        text-align: center;
+        box-shadow:6px -1px 10px -2px rgba(0,0,0,0.53);
+        border-radius: 20px;
+        display:grid;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+    }
+
+    .community{
+        width:500px;
+        height: 120px;
+        box-shadow:6px -1px 10px -2px rgba(0,0,0,0.53);
+        border-radius: 20px;
+        margin: 0 auto;
+        padding:20px;
+        margin-bottom: 30px;
+        position: relative;
+        bottom: -115px;
+        z-index: 3;
+        background-color: #fff;
+        text-align: center;
+    }
+
+    .footer{
+        width: 850px;
+        padding: 30px 20px;
+        background-color: hsl(192, 100%, 9%);
+        color: #fff;
+    }
+
+    .contact{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        font-size: 0.8rem;
+        padding-top: 20px;
+        margin-top: 10px;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .location img, .contact img, .email img{
+        width: 16px;
+        height: 16px;
+    }
+
+    .location, .contact, .email{
+        padding: 0px;
+        text-align: left;
+        padding-right: 20px;
+    }
+
+    .footer-link ul{
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        gap: 40px;
+    }
+    
+    
+    .footer-link li a{
+        text-decoration:none ;
+        color: #fff;
+        font-size: 0.8rem;
+    }
+
+    .footer-text{
+        text-align:right;
+        font-size: 0.6rem;
+        margin-right: 20px;
+    }
+
+    .conversation{
+        grid-template-areas: " con-img flow";
+    }
+
+    .con-img{
+        grid-area:"con-img" ;
+    }
+
+    .flow{
+        grid-area: "flow";
+    }
+
+}
